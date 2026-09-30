@@ -1,1 +1,262 @@
+Lists:
+1. Empty List
+# empty list
+my_list = []
+print(my_list)
+
+2. List of Integers
+# list of integers
+my_list = [1, 2, 3]
+print(my_list)
+
+3. List with Mixed Data Types
+# list with mixed data types
+my_list = [1, "Hello", 3.4]
+print(my_list)
+
+4. Multiple Data Type Assignment
+# multiple datatype assign
+n_list = [2.9, 3000, 'Hello', "Welcome to python list ", True]
+print(n_list)
+
+5. Nested List Example 1
+n_list = ["Happy", [2, 0, 1, 5]]
+# Nested indexing
+print(n_list[0][3])
+print(n_list[1][2])
+
+6. Nested List Example 2
+my_list = ["mouse", [8, 4, 6], ['a', 'b', 'c']]
+print(my_list)
+print(my_list[0])
+# Nested indexing
+print(my_list[1][1])
+print(my_list[2][2])
+
+7. Negative Indexing in Lists
+my_list = ['p', 'r', 'o', 'b', 'e']
+print(my_list[-1])
+print(my_list[-5])
+
+8. Appending and Extending Lists
+odd = [1, 3, 5]
+odd.append(7)
+print(odd)
+odd.extend([9, 11, 13])
+print(odd)
+
+9. Concatenating and Repeating Lists
+
+odd = [1, 3, 5]
+print(odd + [9, 7, 5])
+print(["re"] * 3)
+
+10. Length of a List
+thislist = ["apple", "banana", "cherry"]
+print(len(thislist))
+
+11. Remove Specified Item
+thislist = ["apple", "banana", "cherry"]
+thislist.remove("banana")
+print(thislist)
+
+12. Sort a List of Strings
+thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+thislist.sort()
+print(thislist)
+
+13. Sort a List of Numbers
+thislist = [100, 50, 65, 82, 23]
+thislist.sort()
+print(thislist)
+
+14. Insert an Item into a List
+fruits = ['apple', 'banana', 'cherry']
+fruits.insert(1, "orange")
+print(fruits)
+
+15. Count an Item in a List (String)
+fruits = ["apple", "banana", "cherry", "apple"]
+x = fruits.count("apple")
+print(x)
+
+16. Count an Item in a List (Number)
+fruits = [1, 4, 2, 9, 7, 8, 9, 3, 1]
+x = fruits.count(9)
+print(x)
+
+17. Find Index of a Value
+lst = [10, 20, 30, 40, 50]
+value = 30
+position = lst.index(value)
+print("List     :", lst)
+print("Value    :", value)
+print("Index    :", position)
+
+Tubles:
+1. Tuple of Strings – Accessing Elements
+# tuple of strings
+my_data = ("hi", "hello", "bye")
+# displaying all elements
+print(my_data)
+# accessing first element
+print(my_data[0])
+# accessing third element
+print(my_data[2])
+
+2. Tuple with Different Data Types – Negative Indexing
+my_data = (1, 2, "Kevin", 8.9)
+# accessing last element
+print(my_data[-1])
+# accessing third element from the end
+print(my_data[-3])
+
+3. Nested Tuple – Indexing
+my_data = (1, "Steve", (11, 22, 33))
+# accessing character 'v'
+print(my_data[1][3])
+# accessing 22
+print(my_data[2][1])
+
+4. Iterating Over a Tuple
+# tuple of fruits
+my_tuple = ("Apple", "Orange", "Grapes", "Banana")
+# iterating over tuple elements
+for fruit in my_tuple:
+    print(fruit)
+
+Dictionary
+1. Create and Print a Dictionary
+student = {
+    "name": "Ashif",
+    "age": 18,
+    "course": "B.Tech IT"
+}
+print(student)
+
+2. Access Dictionary Items
+student = {
+    "name": "Ashif",
+    "age": 18,
+    "course": "B.Tech IT"
+}
+print(student["name"])
+print(student["age"])
+
+3. Add an Item
+student = {
+    "name": "Ashif",
+    "age": 18
+}
+student["city"] = "Trichy"
+print(student)
+
+4. Change a Value
+student = {
+    "name": "Ashif",
+    "age": 18
+}
+student["age"] = 19
+print(student)
+
+5. Remove an Item
+student = {
+    "name": "Ashif",
+    "age": 18,
+    "city": "Trichy"
+}
+student.pop("city")
+print(student)
+
+6. Get Dictionary Length
+student = {
+    "name": "Ashif",
+    "age": 18,
+    "course": "B.Tech IT"
+}
+print(len(student))
+
+7. Loop Through Dictionary
+student = {
+    "name": "Ashif",
+    "age": 18,
+    "course": "B.Tech IT"
+}
+for key in student:
+    print(key)
+
+8. Check if Key Exists
+student = {
+    "name": "Ashif",
+    "age": 18
+}
+if "name" in student:
+    print("Name is available")
+
+Set:
+# Set of integers
+my_set = {1, 2, 3}
+print(my_set)
+
+# Set of mixed datatypes
+my_set = {1.0, "Hello", (1, 2, 3)}
+print(my_set)
+
+my_set = {1, 2, 3}
+my_set.add(4)
+print(my_set)
+
+my_set = {1, 2, 3}
+my_set.remove(2)
+print(my_set)
+
+numbers = [1, 2, 2, 3, 4]
+my_set = set(numbers)
+print(my_set)
+
+Program 6
+nums1 = {1, 2, 2, 3, 4, 5}
+nums2 = {4, 5, 6, 7, 7, 8}
+
+distinct_nums = nums1.union(nums2)
+
+print("The union of two sets is: ", distinct_nums)
+Output:
+The union of two sets is:  {1, 2, 3, 4, 5, 6, 7, 8}
+
+Program 7
+nums1 = {1, 2, 2, 3, 4, 5}
+nums2 = {4, 5, 6, 7, 7, 8}
+
+common_nums = nums1.intersection(nums2)
+
+print("The intersection of two sets is:", common_nums)
+Output:
+The intersection of two sets is: {4, 5}
+
+Program 8
+nums1 = {1, 2, 2, 3, 4, 5}
+nums2 = {4, 5, 6, 7, 8, 8}
+
+nums3 = nums1.difference(nums2)
+nums4 = nums2.difference(nums1)
+
+print("nums1 - nums2: ", nums3)
+print("nums2 - nums1: ", nums4)
+Output:
+nums1 - nums2:  {1, 2, 3}
+nums2 - nums1:  {6, 7, 8}
+
+Program 9
+A = {1, 2, 3, 4}
+B = {3, 4, 5, 6}
+
+print(A | B)   # Union
+print(A & B)   # Intersection
+print(A - B)   # Difference
+Output:
+{1, 2, 3, 4, 5, 6}
+{3, 4}
+{1, 2}
+
 
